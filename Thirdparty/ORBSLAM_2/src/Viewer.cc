@@ -165,20 +165,20 @@ namespace ORB_SLAM2
 
       if (mbSaveResults)
       {
-        std::ostringstream out;
-        out << std::internal << std::setfill('0') << std::setw(5)
-            << uint(timestamp);
-        d_cam1.SaveOnRender("3D" + out.str());
+//        std::ostringstream out;
+//        out << std::internal << std::setfill('0') << std::setw(5)
+//            << uint(timestamp);
+//        d_cam1.SaveOnRender("3D" + out.str());
       }
       cv::Mat im = mpFrameDrawer->DrawFrame();
       if (!im.empty())
       {
         if (mbSaveResults)
         {
-          std::ostringstream out;
-          out << std::internal << std::setfill('0') << std::setw(5)
-              << uint(timestamp);
-          cv::imwrite("2D" + out.str() + ".png", im);
+//          std::ostringstream out;
+//          out << std::internal << std::setfill('0') << std::setw(5)
+//              << uint(timestamp);
+//          cv::imwrite("2D" + out.str() + ".png", im);
         }
         cv::imshow("ORBSLAM2: Current Frame", im);
         cv::waitKey(10);

@@ -3,7 +3,7 @@ project(ORBSLAM)
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 4.0.0 REQUIRED)
+find_package(OpenCV 3.4.10 REQUIRED)
 find_package(Pangolin REQUIRED)
 FIND_PACKAGE(Ceres REQUIRED)
 find_package(Eigen3 REQUIRED)

@@ -175,8 +175,8 @@ void LoadImages(const string &strPathLeft, const string &strPathRight,
       string name = ss.str();
       for (uint i(0); i < 6; i++)
         name.pop_back();
-      vstrImageLeft.push_back(strPathLeft + "/stereo_im_l_" + name + ".png");
-      vstrImageRight.push_back(strPathRight + "/stereo_im_r_" + name + ".png");
+//      vstrImageLeft.push_back(strPathLeft + "/stereo_im_l_" + name + ".png");
+//      vstrImageRight.push_back(strPathRight + "/stereo_im_r_" + name + ".png");
 
       //  std::cout << name<< std::endl;
 

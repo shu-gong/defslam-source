@@ -1,5 +1,6 @@
 #include <opencv2/core/core.hpp>
 #include <System.h>
+#include <stdio.h>
 
 int main(int argc, char **argv)
 {
@@ -19,8 +20,10 @@ int main(int argc, char **argv)
     else
         cap.open(argv[3]);
 
-    if (!cap.isOpened()) // check if we succeeded
+    if (!cap.isOpened()) {// check if we succeeded
+        std::cout << "ERROR: cap is not opened!()" << std::endl;
         return -1;
+    }
 
     string arg = argv[2];
     string arg2 = argv[1];
