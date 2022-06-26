@@ -95,12 +95,13 @@ set(DeformableSLAM_DIR ${PROJECT_SOURCE_DIR})
 set(DeformableSLAM_DIR_LIBRARY
     DeformableSLAM
 )
+
 set(DeformableSLAM_LIBRARY_DIRS
         ${DeformableSLAM_BINARY_DIR}
 )
 
 configure_file (
-        "${PROJECT_SOURCE_DIR}/CMake/DeformableSLAMConfig.cmake.in"
+        "${PROJECT_SOURCE_DIR}/DeformableSLAMConfig.cmake.in"
         "${PROJECT_BINARY_DIR}/DeformableSLAMConfig.cmake"
 )
 
