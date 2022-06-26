@@ -10,7 +10,7 @@ int main(int argc, char **argv)
   if (argc != 5)
   {
     cerr << endl
-         << "Usage: ./DefSLAMCTGT ORBvocabulary calibrationFile "
+         << "Usage: ./DeformableSLAMCTGT ORBvocabulary calibrationFile "
             "video CTfiles(heartDepthMap_ from hamlyn)"
          << endl;
     return 1;
@@ -61,7 +61,7 @@ int main(int argc, char **argv)
                               cv::Size(cols_l, rows_l), CV_32F, M1l, M2l);
 
   uint i(0);
-  defSLAM::System SLAM(arg2, arg, true);
+  DeformableSLAM::System SLAM(arg2, arg, true);
   while (true)
   {
     cv::Mat imLeft;

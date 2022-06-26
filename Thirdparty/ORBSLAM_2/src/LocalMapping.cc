@@ -436,7 +436,7 @@ namespace ORB_SLAM2
           continue;
 
         // Triangulation is succesfull
-        MapPoint *pMP = new defSLAM::DefMapPoint(x3D, mpCurrentKeyFrame, mpMap);
+        MapPoint *pMP = new DeformableSLAM::DefMapPoint(x3D, mpCurrentKeyFrame, mpMap);
 
         pMP->AddObservation(mpCurrentKeyFrame, idx1);
         pMP->AddObservation(pKF2, idx2);

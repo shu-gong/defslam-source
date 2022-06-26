@@ -28,7 +28,7 @@
 #include "Tracking.h"
 #include <mutex>
 
-namespace defSLAM
+namespace DeformableSLAM
 {
   class System;
 }
@@ -38,7 +38,7 @@ namespace ORB_SLAM2
   class Tracking;
   class FrameDrawer;
   class MapDrawer;
-  using defSLAM::System;
+  using DeformableSLAM::System;
   class Viewer
   {
   public:

@@ -40,7 +40,7 @@
 #include "Viewer.h"
 #include <mutex>
 
-namespace defSLAM
+namespace DeformableSLAM
 {
   class System;
 }
@@ -54,7 +54,7 @@ namespace ORB_SLAM2
   class Map;
   class LocalMapping;
   class LoopClosing;
-  using defSLAM::System;
+  using DeformableSLAM::System;
 
   class Tracking
   {

@@ -6,7 +6,7 @@
  *  2009/??/??: First version
  *  2010/12/15: Translation to CPP
  *              Adding OpenMP support
- *  2018/12/18: Adaptation to c++ for defSLAM (Jose Lamarca)
+ *  2018/12/18: Adaptation to c++ for DeformableSLAM (Jose Lamarca)
  *
  * (c)2009-2010, Florent Brunet.
  */

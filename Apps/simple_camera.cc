@@ -8,8 +8,8 @@ int main(int argc, char **argv)
     if ((argc != 4) and (argc != 3))
     {
         cerr << endl
-             << "Usage: ./DefSLAM ORBvocabulary calibrationFile video" << endl
-             << " or    ./DefSLAM ORBvocabulary calibrationFile  " << endl
+             << "Usage: ./DeformableSLAM ORBvocabulary calibrationFile video" << endl
+             << " or    ./DeformableSLAM ORBvocabulary calibrationFile  " << endl
              << endl;
         return 1;
     }
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 
     // Create SLAM system. It initializes all system threads and gets ready to
     // process frames.
-    defSLAM::System SLAM(argv[1], argv[2], true);
+    DeformableSLAM::System SLAM(argv[1], argv[2], true);
 
     uint i(0);
     cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);

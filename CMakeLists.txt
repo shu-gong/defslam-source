@@ -54,7 +54,7 @@ include_directories(${DeformableSLAM_INCLUDE_DIRS})
 
 #set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
-FILE(GLOB SRC_DEFSLAM_FILES
+FILE(GLOB SRC_DeformableSLAM_FILES
      "Modules/Common/*.cc"
      "Modules/GroundTruth/*.cc"
      "Modules/Mapping/*.cc"
@@ -64,7 +64,7 @@ FILE(GLOB SRC_DEFSLAM_FILES
      "Modules/Viewer/*.cc")
 
 add_library(DeformableSLAM SHARED
-${SRC_DEFSLAM_FILES}
+${SRC_DeformableSLAM_FILES}
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2)
@@ -106,11 +106,11 @@ configure_file (
 )
 
 ## Just receive image from a camera or a video and process them.
-add_executable(DefSLAM Apps/simple_camera.cc) 
-target_link_libraries(DefSLAM ${PROJECT_NAME})
+add_executable(DeformableSLAM-1 Apps/simple_camera.cc)
+target_link_libraries(DeformableSLAM-1 ${PROJECT_NAME})
 
-add_executable(DefSLAMGTCT Apps/simple_CT.cc) 
-target_link_libraries(DefSLAMGTCT ${PROJECT_NAME})
+add_executable(DeformableSLAMGTCT Apps/simple_CT.cc)
+target_link_libraries(DeformableSLAMGTCT ${PROJECT_NAME})
 
-add_executable(DefSLAMGT Apps/stereo_groundtruth.cc)
-target_link_libraries(DefSLAMGT ${PROJECT_NAME})
+add_executable(DeformableSLAMGT Apps/stereo_groundtruth.cc)
+target_link_libraries(DeformableSLAMGT ${PROJECT_NAME})

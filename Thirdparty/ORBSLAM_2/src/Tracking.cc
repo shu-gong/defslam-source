@@ -319,7 +319,7 @@ namespace ORB_SLAM2
       cv::cvtColor(imRectLeft, mImRGB, cv::COLOR_GRAY2RGB);
     }
 
-    mCurrentFrame = new defSLAM::GroundTruthFrame(
+    mCurrentFrame = new DeformableSLAM::GroundTruthFrame(
         mImGray, imGrayRight, timestamp, mpORBextractorLeft, mpORBextractorRight,
         mpORBVocabulary, mK, mDistCoef, mbf, mThDepth, imRectLeft);
 
@@ -367,7 +367,7 @@ namespace ORB_SLAM2
       cv::cvtColor(imRectLeft, mImRGB, cv::COLOR_GRAY2RGB);
     }
 
-    mCurrentFrame = new defSLAM::GroundTruthFrame(mImGray, imGrayRight, timestamp, mpORBextractorLeft,
+    mCurrentFrame = new DeformableSLAM::GroundTruthFrame(mImGray, imGrayRight, timestamp, mpORBextractorLeft,
                                                   mpORBextractorRight, mpORBVocabulary, mK, mDistCoef, mbf, mThDepth, imRectLeft, _mask);
 
     Track();
@@ -377,11 +377,11 @@ namespace ORB_SLAM2
     if ((mState == eTrackingState::OK) && (saveResults))
     {
       float scale =
-          static_cast<defSLAM::GroundTruthFrame *>(mCurrentFrame)
+          static_cast<DeformableSLAM::GroundTruthFrame *>(mCurrentFrame)
               ->Estimate3DScale(
                   mpMap);
       scalefile << mCurrentFrame->mTimeStamp << " " << scale << std::endl;
-      static_cast<defSLAM::GroundTruthFrame *>(mCurrentFrame)
+      static_cast<DeformableSLAM::GroundTruthFrame *>(mCurrentFrame)
           ->Estimate3DError(mpMap, scale);
       mpMapDrawer->UpdatePoints(mCurrentFrame, scale);
     }
@@ -423,7 +423,7 @@ namespace ORB_SLAM2
       cv::cvtColor(imRectLeft, mImRGB, cv::COLOR_GRAY2RGB);
     }
 
-    mCurrentFrame = new defSLAM::GroundTruthFrame(
+    mCurrentFrame = new DeformableSLAM::GroundTruthFrame(
         mImGray, timestamp, mpORBextractorLeft, mpORBVocabulary, mK, mDistCoef,
         mbf, mThDepth, imRectLeft, imDepth, true, _mask);
 
@@ -432,9 +432,9 @@ namespace ORB_SLAM2
     if ((mState == eTrackingState::OK) && (true))
     {
       float scale =
-          static_cast<defSLAM::GroundTruthFrame *>(mCurrentFrame)->Estimate3DScale(mpMap);
+          static_cast<DeformableSLAM::GroundTruthFrame *>(mCurrentFrame)->Estimate3DScale(mpMap);
       scalefile << mCurrentFrame->mTimeStamp << " " << scale << std::endl;
-      double error = static_cast<defSLAM::GroundTruthFrame *>(mCurrentFrame)
+      double error = static_cast<DeformableSLAM::GroundTruthFrame *>(mCurrentFrame)
                          ->Estimate3DError(mpMap, scale);
 
       if (viewerOn)
@@ -778,7 +778,7 @@ namespace ORB_SLAM2
         if (z > 0)
         {
           cv::Mat x3D = mCurrentFrame->UnprojectStereo(i);
-          MapPoint *pNewMP = new defSLAM::DefMapPoint(x3D, pKFini, mpMap);
+          MapPoint *pNewMP = new DeformableSLAM::DefMapPoint(x3D, pKFini, mpMap);
           pNewMP->AddObservation(pKFini, i);
           pKFini->addMapPoint(pNewMP, i);
           pNewMP->ComputeDistinctiveDescriptors();
@@ -914,7 +914,7 @@ namespace ORB_SLAM2
       // Create MapPoint.
       cv::Mat worldPos(mvIniP3D[i]);
 
-      MapPoint *pMP = new defSLAM::DefMapPoint(worldPos, pKFcur, mpMap);
+      MapPoint *pMP = new DeformableSLAM::DefMapPoint(worldPos, pKFcur, mpMap);
 
       pKFini->addMapPoint(pMP, i);
       pKFcur->addMapPoint(pMP, mvIniMatches[i]);
@@ -1106,7 +1106,7 @@ namespace ORB_SLAM2
       if (bCreateNew)
       {
         cv::Mat x3D = mLastFrame.UnprojectStereo(i);
-        MapPoint *pNewMP = new defSLAM::DefMapPoint(x3D, mpMap, &mLastFrame, i);
+        MapPoint *pNewMP = new DeformableSLAM::DefMapPoint(x3D, mpMap, &mLastFrame, i);
 
         mLastFrame.mvpMapPoints[i] = pNewMP;
 

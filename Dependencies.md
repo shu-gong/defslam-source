@@ -1,7 +1,7 @@
 ##List of Known Dependencies
-### DefSLAM version 1.0
+### DeformableSLAM version 1.0
 
-In this document we list all the pieces of code included by defSLAM and linked libraries which are not property of the authors of defSLAM.
+In this document we list all the pieces of code included by DeformableSLAM and linked libraries which are not property of the authors of DeformableSLAM.
 
 #####Code in Thirdparty folder
 * All code in **ORBSLAM_2** folder.

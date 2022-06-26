@@ -4,7 +4,7 @@ cd Vocabulary
 tar -xf ORBvoc.txt.tar.gz
 cd ..
 
-echo "Configuring and building DefSLAM ..."
+echo "Configuring and building DeformableSLAM ..."
 
 mkdir build
 cd build

@@ -28,7 +28,7 @@
 #include <pangolin/pangolin.h>
 namespace ORB_SLAM2
 {
-  using defSLAM::GroundTruthFrame;
+  using DeformableSLAM::GroundTruthFrame;
 
   MapDrawer::MapDrawer(Map *pMap, const string &strSettingPath) : mpMap(pMap)
   {

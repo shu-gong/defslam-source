@@ -1,21 +1,21 @@
 /**
-* This file is part of DefSLAM.
+* This file is part of DeformableSLAM.
 *
 * Copyright (C) 2017-2020 Jose Lamarca Peiro <jlamarca at unizar dot es>, J.M.M. Montiel (University
 *of Zaragoza) && Shaifali Parashar, Adrien Bartoli (Université Clermont Auvergne)
 *
-* DefSLAM is free software: you can redistribute it and/or modify
+* DeformableSLAM is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
 *
-* DefSLAM is distributed in the hope that it will be useful,
+* DeformableSLAM is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 * GNU General Public License for more details.
 *
 * You should have received a copy of the GNU General Public License
-* along with DefSLAM. If not, see <http://www.gnu.org/licenses/>.
+* along with DeformableSLAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include "System.h"
@@ -41,7 +41,7 @@
 #include <thread>
 #include <unistd.h>
 
-namespace defSLAM
+namespace DeformableSLAM
 {
   System::System(const string &strVocFile, const string &strSettingsFile,
                  const bool bUseViewer)
@@ -51,7 +51,7 @@ namespace defSLAM
     // Output welcome message
 #ifndef ORBSLAM
     cout << endl
-         << "DefSLAM 2019-2020 José Lamarca, University of Zaragoza." << endl
+         << "DeformableSLAM 2019-2020 José Lamarca, University of Zaragoza." << endl
          << "This program comes with ABSOLUTELY NO WARRANTY;" << endl
          << "This is free software, and you are welcome to redistribute it"
          << endl
@@ -135,7 +135,7 @@ namespace defSLAM
                                 strSettingsFile, mSensor, bUseViewer);
 
     // Initialize the Local Mapping thread and launch
-    mpLocalMapper = new defSLAM::DefLocalMapping(
+    mpLocalMapper = new DeformableSLAM::DefLocalMapping(
         mpMap, strSettingsFile);
 #ifdef PARALLEL
     mptLocalMapping = new thread(&ORB_SLAM2::LocalMapping::Run, mpLocalMapper);
@@ -472,7 +472,7 @@ namespace defSLAM
 #ifdef ORBSLAM
       pangolin::BindToContext("ORBSLAM2: Map Viewer");
 #else
-      pangolin::BindToContext("DefSLAM: Map Viewer");
+      pangolin::BindToContext("DeformableSLAM: Map Viewer");
 #endif
   }
 
@@ -481,4 +481,4 @@ namespace defSLAM
     unique_lock<mutex> lock(mMutexState);
     return mTrackingState;
   }
-} // namespace defSLAM
+} // namespace DeformableSLAM

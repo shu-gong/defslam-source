@@ -1,16 +1,16 @@
-# 1. DefSLAM
+# 1. DeformableSLAM
 **Authors:** [Jose Lamarca](http://webdiis.unizar.es/~jlamarca/), Shaifali Parashar, Adrien Bartoli and [J. M. M. Montiel](http://webdiis.unizar.es/~josemari/) 
 
-DefSLAM is a real-time deformable SLAM library for **Monocular** cameras that computes the camera trajectory and a sparse 3D reconstruction in a deformable environment.
+DeformableSLAM is a real-time deformable SLAM library for **Monocular** cameras that computes the camera trajectory and a sparse 3D reconstruction in a deformable environment.
 
 [![](https://img.youtube.com/vi/6mmhD2_t6Gs/0.jpg)](https://www.youtube.com/watch?v=6mmhD2_t6Gs&t=3s)
 
 Find more videos of experiments here: https://www.youtube.com/playlist?list=PLKBuKNhAV30SlKGJ9eaMlAExdWRypUy-K
 ### Related Publications:
-[Lamarca, Jose, et al. "DefSLAM: Tracking and Mapping of Deforming Scenes from Monocular Sequences." arXiv preprint arXiv:1908.08918 (2019).](https://arxiv.org/abs/1908.08918)
+[Lamarca, Jose, et al. "DeformableSLAM: Tracking and Mapping of Deforming Scenes from Monocular Sequences." arXiv preprint arXiv:1908.08918 (2019).](https://arxiv.org/abs/1908.08918)
 ```
-@article{lamarca2019defslam,
-  title={DefSLAM: Tracking and Mapping of Deforming Scenes from Monocular Sequences},
+@article{lamarca2019DeformableSLAM,
+  title={DeformableSLAM: Tracking and Mapping of Deforming Scenes from Monocular Sequences},
   author={Lamarca, Jose and Parashar, Shaifali and Bartoli, Adrien and Montiel, JMM},
   journal={arXiv preprint arXiv:1908.08918},
   year={2019}
@@ -50,24 +50,24 @@ We use modified versions of the [DBoW2](https://github.com/dorian3d/DBoW2) libra
 
 # 3. License
 
-DefSLAM is released under a [GPLv3 license](https://github.com/jlamraca/DefSLAM/blob/master/License-gpl.txt). For a list of all code/library dependencies (and associated licenses), please see [Dependencies.md](https://github.com/jlamarca/DefSLAM/blob/master/Dependencies.md).
+DeformableSLAM is released under a [GPLv3 license](https://github.com/jlamraca/DeformableSLAM/blob/master/License-gpl.txt). For a list of all code/library dependencies (and associated licenses), please see [Dependencies.md](https://github.com/jlamarca/DeformableSLAM/blob/master/Dependencies.md).
 
 
-# 4. Building DefSLAM library and examples
+# 4. Building DeformableSLAM library and examples
 
 Clone the repository:
 ```
-git clone https://github.com/JoseLamarca/DefSLAM.git
+git clone https://github.com/JoseLamarca/DeformableSLAM.git
 ```
 
-We provide a script `build.sh` to build the *DefSLAM* including. Please make sure you have installed all required dependencies (see section 2). Execute:
+We provide a script `build.sh` to build the *DeformableSLAM* including. Please make sure you have installed all required dependencies (see section 2). Execute:
 ```
-cd DefSLAM
+cd DeformableSLAM
 chmod +x build.sh
 ./build.sh
 ```
 
-This will create **libDefSLAM.so**  at *lib* folder and the executables **simplestereo** **simpleCT** and **simple** in *Apps* folder.
+This will create **libDeformableSLAM.so**  at *lib* folder and the executables **simplestereo** **simpleCT** and **simple** in *Apps* folder.
 
 # 5. Datasets
 ## Mandala dataset
@@ -95,18 +95,18 @@ Examples of scripts in Apps/rungt.sh
 
 1. Process a sequence. 
 ```
-./DefSLAM <ORBfile> <yaml.file> <ORBfile> <image folder>
+./DeformableSLAM <ORBfile> <yaml.file> <ORBfile> <image folder>
 ```
 If you run it without <image folder>. It takes the camera in 0. 
 
 2. Sequences with depth image for ground truth. (Used for CT phantom dataset)
 ```
-./DefSLAMCTGT <ORBfile> <yaml.file> <video.avi> <folder with pattern>
+./DeformableSLAMCTGT <ORBfile> <yaml.file> <video.avi> <folder with pattern>
 ```
 
 3. Sequences with stereo for ground truth.
 ```
-./DefSLAMGT <ORBfile> <yaml.file> <left_image folder> <right_image folder> <timestamps file>
+./DeformableSLAMGT <ORBfile> <yaml.file> <left_image folder> <right_image folder> <timestamps file>
 ```
 
 Script to generate this folders with this format avaiable. Ask me through <jlamarca@unizar.es>
@@ -125,7 +125,7 @@ Script to generate this folders with this format avaiable. Ask me through <jlama
     -- ORBSLAM_2. Base clases of the rigid SLAM library modified to work in deforming 
 		  environments.
 
-  -- Modules. DefSLAM modules, it includes all the modules needed for the library.
+  -- Modules. DeformableSLAM modules, it includes all the modules needed for the library.
     -- Common. It includes the keyframes, map, map points and Systems.
     -- Mapping.
     -- GroundTruth
