@@ -1,0 +1,40 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/shu/GitHub/defslam-source/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/shu/Programs/clion-2022.1.3/bin/ninja/linux/ninja cmTC_2cc5d && [1/2] Building C object CMakeFiles/cmTC_2cc5d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2cc5d
+FAILED: cmTC_2cc5d 
+: && /usr/bin/cc -Wall -O3 -march=native -fopenmp -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_2cc5d.dir/CheckFunctionExists.c.o -o cmTC_2cc5d   && :
+/usr/bin/ld: CMakeFiles/cmTC_2cc5d.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.startup+0xc): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/shu/GitHub/defslam-source/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/shu/Programs/clion-2022.1.3/bin/ninja/linux/ninja cmTC_e53cc && [1/2] Building C object CMakeFiles/cmTC_e53cc.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e53cc
+FAILED: cmTC_e53cc 
+: && /usr/bin/cc -Wall -O3 -march=native -fopenmp -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_e53cc.dir/CheckFunctionExists.c.o -o cmTC_e53cc  /usr/lib/x86_64-linux-gnu/libblas.so  /usr/lib/x86_64-linux-gnu/libf77blas.so  /usr/lib/x86_64-linux-gnu/libatlas.so  -lm  -ldl && :
+/usr/bin/ld: CMakeFiles/cmTC_e53cc.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.startup+0xc): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/shu/GitHub/defslam-source/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/shu/Programs/clion-2022.1.3/bin/ninja/linux/ninja cmTC_c75ea && [1/2] Building C object CMakeFiles/cmTC_c75ea.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c75ea
+FAILED: cmTC_c75ea 
+: && /usr/bin/cc -Wall -O3 -march=native -fopenmp -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_c75ea.dir/CheckFunctionExists.c.o -o cmTC_c75ea  /usr/lib/x86_64-linux-gnu/liblapack.so  /usr/lib/x86_64-linux-gnu/libblas.so  /usr/lib/x86_64-linux-gnu/libf77blas.so  /usr/lib/x86_64-linux-gnu/libatlas.so  -fortranlibs && :
+cc: error: unrecognized command line option ‘-fortranlibs’; did you mean ‘-fltrans’?
+ninja: build stopped: subcommand failed.
+
+
+

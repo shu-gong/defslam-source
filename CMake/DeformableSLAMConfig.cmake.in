@@ -1,0 +1,32 @@
+# Find the DeformableSLAM includes and library
+#
+# DeformableSLAM_INCLUDE_DIRS- where to find include files.
+# DeformableSLAM_LIBRARIES - List of fully qualified libraries to link against.
+# DeformableSLAM_FOUND - set to 1 if found.
+#
+# Usage:
+# DeformableSLAM
+#----------
+# option(USE_DeformableSLAM "Use DeformableSLAM" OFF)
+# if (USE_DeformableSLAM)
+#    ADD_DEFINITIONS(-DUSE_DeformableSLAM)
+#    find_package(DeformableSLAM REQUIRED)
+#    include(${DeformableSLAM_USE_FILE})
+# endif()
+#
+
+set (DeformableSLAM_FOUND 1)
+
+set (DeformableSLAM_SOURCE_DIR "@DeformableSLAM_SOURCE_DIR@")
+
+set (DeformableSLAM_INCLUDE_DIRS "@DeformableSLAM_INCLUDE_DIRS@")
+
+set (DeformableSLAM_LIBRARY_DIRS "@DeformableSLAM_LIBRARY_DIRS@")
+set (DeformableSLAM_LIBRARY "@DeformableSLAM_LIBRARY@")
+set (TestDeformableSLAM_LIBRARY "@TestDeformableSLAM_LIBRARY@")
+set (OPENCL_LIBRARIES "@OPENCL_LIBRARIES@")
+
+set (DeformableSLAM_USE_FILE "@DeformableSLAM_SOURCE_DIR@/CMake/DeformableSLAMUse.cmake")
+
+set (DeformableSLAM_KERNELS_DIR "@DeformableSLAM_DIR@")
+

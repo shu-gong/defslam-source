@@ -32,24 +32,27 @@ find_package(Pangolin REQUIRED)
 FIND_PACKAGE(Ceres REQUIRED)
 find_package(Eigen3 REQUIRED)
 
-include_directories(
-${PROJECT_SOURCE_DIR}
-${PROJECT_SOURCE_DIR}/Thirdparty/ORBSLAM_2/include/
-${PROJECT_SOURCE_DIR}/Thirdparty/BBS
-${PROJECT_SOURCE_DIR}/Modules/Common
-${PROJECT_SOURCE_DIR}/Modules/GroundTruth
-${PROJECT_SOURCE_DIR}/Modules/Mapping
-${PROJECT_SOURCE_DIR}/Modules/Matching
-${PROJECT_SOURCE_DIR}/Modules/Settings
-${PROJECT_SOURCE_DIR}/Modules/Template
-${PROJECT_SOURCE_DIR}/Modules/Tracking
-${PROJECT_SOURCE_DIR}/Modules/Viewer
-${EIGEN3_INCLUDE_DIR}
-${Pangolin_INCLUDE_DIRS}
-${CERES_INCLUDE_DIRS}
+set(DeformableSLAM_INCLUDE_DIRS
+   ${PROJECT_SOURCE_DIR}
+   ${PROJECT_SOURCE_DIR}/Thirdparty/ORBSLAM_2/include/
+   ${PROJECT_SOURCE_DIR}/Thirdparty/BBS
+   ${PROJECT_SOURCE_DIR}/Modules/Common
+   ${PROJECT_SOURCE_DIR}/Modules/GroundTruth
+   ${PROJECT_SOURCE_DIR}/Modules/Mapping
+   ${PROJECT_SOURCE_DIR}/Modules/Matching
+   ${PROJECT_SOURCE_DIR}/Modules/Settings
+   ${PROJECT_SOURCE_DIR}/Modules/Template
+   ${PROJECT_SOURCE_DIR}/Modules/Tracking
+   ${PROJECT_SOURCE_DIR}/Modules/Viewer
+   ${EIGEN3_INCLUDE_DIR}
+   ${Pangolin_INCLUDE_DIRS}
+   ${CERES_INCLUDE_DIRS}
+   ${DeformableSLAM_BINARY_DIR}
 )
 
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+include_directories(${DeformableSLAM_INCLUDE_DIRS})
+
+#set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 FILE(GLOB SRC_DEFSLAM_FILES
      "Modules/Common/*.cc"
@@ -60,7 +63,7 @@ FILE(GLOB SRC_DEFSLAM_FILES
      "Modules/Tracking/*.cc"
      "Modules/Viewer/*.cc")
 
-add_library(${PROJECT_NAME} SHARED
+add_library(DeformableSLAM SHARED
 ${SRC_DEFSLAM_FILES}
 )
 
@@ -70,19 +73,36 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/Thirdparty/BBS)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Thirdparty/ORBSLAM_2)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Modules/ToolsPCL)
 
-target_link_libraries(${PROJECT_NAME}
-${OpenCV_LIBS}
-${EIGEN3_LIBS} 
-${Pangolin_LIBRARIES}
-${CERES_LIBRARIES}
-DBoW2
-g2o
-BBS
-ORBSLAM
-ToolsPCL
+set(DeformableSLAM_LINK_LIBRARIES
+   ${OpenCV_LIBS}
+   ${EIGEN3_LIBS}
+   ${Pangolin_LIBRARIES}
+   ${CERES_LIBRARIES}
+   DBoW2
+   g2o
+   BBS
+   ORBSLAM
+   ToolsPCL
 )
+
+include(GenerateExportHeader)
+generate_export_header(DeformableSLAM)
+target_link_libraries(DeformableSLAM ${DeformableSLAM_LINK_LIBRARIES})
  
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Apps)
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Apps)
+
+set(DeformableSLAM_DIR ${PROJECT_SOURCE_DIR})
+set(DeformableSLAM_DIR_LIBRARY
+    DeformableSLAM
+)
+set(DeformableSLAM_LIBRARY_DIRS
+        ${DeformableSLAM_BINARY_DIR}
+)
+
+configure_file (
+        "${PROJECT_SOURCE_DIR}/CMake/DeformableSLAMConfig.cmake.in"
+        "${PROJECT_BINARY_DIR}/DeformableSLAMConfig.cmake"
+)
 
 ## Just receive image from a camera or a video and process them.
 add_executable(DefSLAM Apps/simple_camera.cc) 
