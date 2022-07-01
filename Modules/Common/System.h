@@ -59,7 +59,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Tracking;
   using ORB_SLAM2::Viewer;
 
-  class System
+  class DeformableSLAM_EXPORT System
   {
   public:
     // Input sensor

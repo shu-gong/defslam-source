@@ -42,7 +42,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::KeyFrame;
   using ORB_SLAM2::Map;
 
-  class DefMap : public Map
+  class DeformableSLAM_EXPORT DefMap : public Map
   {
   public:
     DefMap();

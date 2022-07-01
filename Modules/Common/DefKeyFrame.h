@@ -49,7 +49,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::MapPoint;
 
-  class DefKeyFrame : public KeyFrame
+  class DeformableSLAM_EXPORT DefKeyFrame : public KeyFrame
   {
   public:
     /**********************

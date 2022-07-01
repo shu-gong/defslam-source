@@ -46,7 +46,7 @@ namespace DeformableSLAM
   class LaplacianMesh;
   using ORB_SLAM2::MapDrawer;
 
-  class DefMapDrawer : public MapDrawer
+  class DeformableSLAM_EXPORT DefMapDrawer : public MapDrawer
   {
   public:
     // Constructor.
