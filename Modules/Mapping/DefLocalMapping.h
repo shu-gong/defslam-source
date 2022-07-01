@@ -35,7 +35,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::MapDrawer;
 
-  class DefLocalMapping : public ORB_SLAM2::LocalMapping
+  class DeformableSLAM_EXPORT DefLocalMapping : public ORB_SLAM2::LocalMapping
   {
   public:
     /***********************************

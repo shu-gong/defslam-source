@@ -37,7 +37,7 @@ namespace DeformableSLAM
   class Edge;
   class Facet;
 
-  class Template
+  class DeformableSLAM_EXPORT Template
   {
   public:
     /*********

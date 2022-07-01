@@ -34,7 +34,7 @@ namespace DeformableSLAM
 
   class SurfacePoint;
 
-  class Surface
+  class DeformableSLAM_EXPORT Surface
   {
   public:
     // No constructor by default

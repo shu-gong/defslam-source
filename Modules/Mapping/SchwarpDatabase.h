@@ -44,7 +44,7 @@ namespace DeformableSLAM
   class WarpDatabase;
   class DiffProp;
 
-  class SchwarpDatabase : public WarpDatabase
+  class DeformableSLAM_EXPORT SchwarpDatabase : public WarpDatabase
   {
   public:
     // Constructor. lambda is set in the file .yalm

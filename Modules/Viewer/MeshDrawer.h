@@ -31,7 +31,7 @@
 
 namespace DeformableSLAM
 {
-    class MeshDrawer
+    class DeformableSLAM_EXPORT MeshDrawer
     {
         /*************
          * Class to draw meshes

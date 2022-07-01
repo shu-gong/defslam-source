@@ -48,7 +48,7 @@ namespace DeformableSLAM
     Eigen::MatrixXd Solaux;
   };
 
-  class ShapeFromNormals
+  class DeformableSLAM_EXPORT ShapeFromNormals
   {
   public:
     // Constructor. It initializes the linear system.

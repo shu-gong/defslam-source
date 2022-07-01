@@ -34,7 +34,7 @@ namespace DeformableSLAM
 {
   using ORB_SLAM2::KeyFrame;
 
-  class DiffProp
+  class DeformableSLAM_EXPORT DiffProp
   {
     /// Class with the differential properties of the warp
     /// used in normal estimation.

@@ -33,7 +33,7 @@ namespace DeformableSLAM
 
   class DefKeyFrame;
 
-  class GroundTruthKeyFrame : public DefKeyFrame
+  class DeformableSLAM_EXPORT GroundTruthKeyFrame : public DefKeyFrame
   {
   public:
     /*****

@@ -32,7 +32,7 @@ namespace DeformableSLAM
 {
   using ORB_SLAM2::KeyFrame;
 
-  class SurfaceRegistration
+  class DeformableSLAM_EXPORT SurfaceRegistration
   {
   public:
     // No constructor by default.

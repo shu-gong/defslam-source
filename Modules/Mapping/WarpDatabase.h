@@ -36,7 +36,7 @@ namespace DeformableSLAM
   typedef std::vector<std::shared_ptr<DiffProp>> kr2krdata;
 
   class DiffProp;
-  class WarpDatabase
+  class DeformableSLAM_EXPORT WarpDatabase
   {
     /*******
      * Base class for the class that estimate the warps and

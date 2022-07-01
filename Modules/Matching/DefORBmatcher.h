@@ -32,7 +32,7 @@ namespace DeformableSLAM
     using ORB_SLAM2::KeyFrame;
     using ORB_SLAM2::ORBmatcher;
 
-    class DefORBmatcher : public ORBmatcher
+    class DeformableSLAM_EXPORT DefORBmatcher : public ORBmatcher
     {
     public:
         // Constructor.

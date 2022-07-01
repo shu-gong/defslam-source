@@ -41,7 +41,7 @@ namespace DeformableSLAM
   class KeyFrame;
   class Frame;
 
-  class TriangularMesh : public Template
+  class DeformableSLAM_EXPORT TriangularMesh : public Template
   {
   public:
     // Constructor by default.

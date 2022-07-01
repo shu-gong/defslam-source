@@ -48,7 +48,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::MapPoint;
 
-  class Node : public MapPoint
+  class DeformableSLAM_EXPORT Node : public MapPoint
   {
   public:
     // Constructor by default
