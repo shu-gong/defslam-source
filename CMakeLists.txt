@@ -63,9 +63,6 @@ FILE(GLOB SRC_DeformableSLAM_FILES
      "Modules/Tracking/*.cc"
      "Modules/Viewer/*.cc")
 
-add_library(DeformableSLAM SHARED
-${SRC_DeformableSLAM_FILES}
-)
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Thirdparty/g2o)
@@ -85,6 +82,7 @@ set(DeformableSLAM_LINK_LIBRARIES
    ToolsPCL
 )
 
+add_library(DeformableSLAM ${SRC_DeformableSLAM_FILES})
 include(GenerateExportHeader)
 generate_export_header(DeformableSLAM)
 target_link_libraries(DeformableSLAM ${DeformableSLAM_LINK_LIBRARIES})
@@ -92,7 +90,7 @@ target_link_libraries(DeformableSLAM ${DeformableSLAM_LINK_LIBRARIES})
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Apps)
 
 set(DSLAM_DIR ${PROJECT_SOURCE_DIR})
-set(DeformableSLAM_DIR_LIBRARY
+set(DeformableSLAM_LIBRARY
     DeformableSLAM
 )
 

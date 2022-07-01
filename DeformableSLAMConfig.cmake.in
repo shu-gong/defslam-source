@@ -28,5 +28,5 @@ set (OPENCL_LIBRARIES "@OPENCL_LIBRARIES@")
 
 set (DeformableSLAM_USE_FILE "@DeformableSLAM_SOURCE_DIR@/DeformableSLAMUse.cmake")
 
-set (DeformableSLAM_KERNELS_DIR "@DeformableSLAM_DIR@")
+set (DeformableSLAM_KERNELS_DIR "@DSLAM_DIR@")
 
