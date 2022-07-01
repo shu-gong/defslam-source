@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="BBS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Thirdparty\;CMake Files\Thirdparty\BBS\;CMake Files\Thirdparty\DBoW2\;CMake Files\Thirdparty\g2o\;CMake Files\Thirdparty\ORBSLAM_2\;CMake Files\cmake_modules\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\;CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\;CMake Files\..\..\..\..\lib\;CMake Files\..\..\..\..\lib\cmake\;CMake Files\..\..\..\..\lib\cmake\eigen3\;CMake Files\..\..\CustusX\;CMake Files\..\..\CustusX\v0.3\;CMake Files\..\..\CustusX\v0.3\cx\;CMake Files\..\..\CustusX\v0.3\cx\FAST\;CMake Files\..\..\CustusX\v0.3\cx\FAST\build_Release\;CMake Files\..\..\CustusX\v0.3\cx\FAST\build_Release\external\;CMake Files\..\..\CustusX\v0.3\cx\FAST\build_Release\external\eigen\;CMake Files\Modules\;CMake Files\Modules\ToolsPCL\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BBS">
+				<Option output="/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/libBBS.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC14"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Thirdparty/ORBSLAM_2/include"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Common"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/GroundTruth"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Mapping"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Matching"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Settings"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Template"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Tracking"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Viewer"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 BBS"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BBS/fast">
+				<Option output="/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/libBBS.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC14"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Thirdparty/ORBSLAM_2/include"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Common"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/GroundTruth"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Mapping"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Matching"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Settings"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Template"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Tracking"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/Modules/Viewer"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/shu/GitHub/DeformableSLAM/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 BBS/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/shu/GitHub/DeformableSLAM/cmake-build-debug/Thirdparty/BBS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS/bbs.cc">
+			<Option target="BBS"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS/bbs.h">
+			<Option target="BBS"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS/bbs_coloc.cc">
+			<Option target="BBS"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS/bbs_coloc.h">
+			<Option target="BBS"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/DeformableSLAMConfig.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/BBS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Thirdparty\BBS\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/DBoW2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Thirdparty\DBoW2\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/g2o/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Thirdparty\g2o\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/g2o/config.h.in">
+			<Option virtualFolder="CMake Files\Thirdparty\g2o\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Thirdparty/ORBSLAM_2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Thirdparty\ORBSLAM_2\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/cmake_modules/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Pangolin/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Pangolin/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/CeresConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/CeresTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/CeresTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/FindCXSparse.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/FindMETIS.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/local/lib/cmake/Ceres/FindSuiteSparse.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/VTKTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/VTKTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/vtkModuleAPI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkChartsCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonColor.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonComputationalGeometry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonDataModel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonExecutionModel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonMath.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonMisc.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonSystem.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkCommonTransforms.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkDICOMParser.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersExtraction.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersGeneral.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersGeometry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersHybrid.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersModeling.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkFiltersStatistics.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOGeometry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOImage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOLegacy.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOPLY.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOXML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkIOXMLParser.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkImagingColor.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkImagingCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkImagingFourier.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkImagingGeneral.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkImagingHybrid.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkImagingSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkInfovisCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkInteractionStyle.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkInteractionWidgets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkMetaIO.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingAnnotation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingContext2D.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingContextOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingFreeType.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingLOD.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkRenderingVolume.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkUtilitiesEncodeString.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkViewsContext2D.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkViewsCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkalglib.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkexpat.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkfreetype.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkglew.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkjpeg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkkwiml.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkpng.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtksys.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtktiff.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/cmake/vtk-7.1/Modules/vtkzlib.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-nonamespace-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-nonamespace-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindEigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindQhull.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../../../lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/../../CustusX/v0.3/cx/FAST/build_Release/external/eigen/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\CustusX\v0.3\cx\FAST\build_Release\external\eigen\"/>
+		</Unit>
+		<Unit filename="/home/shu/GitHub/DeformableSLAM/Modules/ToolsPCL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Modules\ToolsPCL\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

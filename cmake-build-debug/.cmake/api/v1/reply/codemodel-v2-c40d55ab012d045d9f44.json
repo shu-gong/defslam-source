@@ -1,0 +1,273 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-RELEASE-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "Thirdparty/DBoW2",
+					"jsonFile" : "directory-Thirdparty.DBoW2-RELEASE-641658a67f43dd067cdd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Thirdparty/DBoW2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Thirdparty/g2o",
+					"jsonFile" : "directory-Thirdparty.g2o-RELEASE-96235f76f9ee371af9b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Thirdparty/g2o",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Thirdparty/BBS",
+					"jsonFile" : "directory-Thirdparty.BBS-RELEASE-3a98e4383bccf74ac135.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Thirdparty/BBS",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Thirdparty/ORBSLAM_2",
+					"jsonFile" : "directory-Thirdparty.ORBSLAM_2-RELEASE-8e407769c01f3df28bc0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "Thirdparty/ORBSLAM_2",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "Modules/ToolsPCL",
+					"jsonFile" : "directory-Modules.ToolsPCL-RELEASE-dea06143d36b7cf87839.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "Modules/ToolsPCL",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "RELEASE",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DeformableSLAM",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "DBoW2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "g2o",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "BBS",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "ORBSLAM",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "ToolsPCL",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "BBS::@048df461aff85ca0d1ff",
+					"jsonFile" : "target-BBS-RELEASE-78cb5e3aea71991cf77f.json",
+					"name" : "BBS",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "DBoW2::@6f2b5525a279792a37b3",
+					"jsonFile" : "target-DBoW2-RELEASE-3c874339920dde691e59.json",
+					"name" : "DBoW2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DeformableSLAM::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeformableSLAM-RELEASE-96e52ab423d0de2959f8.json",
+					"name" : "DeformableSLAM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DeformableSLAM-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeformableSLAM-1-RELEASE-991f8d1d58d9a489b1e5.json",
+					"name" : "DeformableSLAM-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DeformableSLAMGT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeformableSLAMGT-RELEASE-ea123979d206b84ac8cb.json",
+					"name" : "DeformableSLAMGT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DeformableSLAMGTCT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DeformableSLAMGTCT-RELEASE-8c44cdda9d4678960262.json",
+					"name" : "DeformableSLAMGTCT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ORBSLAM::@fcbeea095fa8f764609e",
+					"jsonFile" : "target-ORBSLAM-RELEASE-08428c7c992141dbe48e.json",
+					"name" : "ORBSLAM",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ToolsPCL::@853093ff9a00294d4c94",
+					"jsonFile" : "target-ToolsPCL-RELEASE-a0cca8e9302d9879a6da.json",
+					"name" : "ToolsPCL",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "g2o::@f8c4e7b936044c71b29a",
+					"jsonFile" : "target-g2o-RELEASE-c549997040f270f59d52.json",
+					"name" : "g2o",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/shu/GitHub/DeformableSLAM/cmake-build-debug",
+		"source" : "/home/shu/GitHub/DeformableSLAM"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

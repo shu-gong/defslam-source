@@ -91,7 +91,7 @@ target_link_libraries(DeformableSLAM ${DeformableSLAM_LINK_LIBRARIES})
  
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Apps)
 
-set(DeformableSLAM_DIR ${PROJECT_SOURCE_DIR})
+set(DSLAM_DIR ${PROJECT_SOURCE_DIR})
 set(DeformableSLAM_DIR_LIBRARY
     DeformableSLAM
 )
