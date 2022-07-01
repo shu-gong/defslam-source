@@ -21,6 +21,7 @@
 
 #ifndef WARPDATABASE_H
 #define WARPDATABASE_H
+#include "deformableslam_export.h"
 
 #include "KeyFrame.h"
 #include "MapPoint.h"

@@ -21,6 +21,7 @@
 
 #ifndef DEFMAPDRAWER_H
 #define DEFMAPDRAWER_H
+#include "deformableslam_export.h"
 
 #include "MapDrawer.h"
 #include "MeshDrawer.h"

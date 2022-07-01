@@ -21,6 +21,8 @@
 
 #ifndef DEFVIEWER_H
 #define DEFVIEWER_H
+#include "deformableslam_export.h"
+
 #include "Viewer.h"
 #include "FrameDrawer.h"
 #include "MapDrawer.h"

@@ -22,6 +22,8 @@
 #ifndef DEFORBMATCHER_H
 #define DEFORBMATCHER_H
 #pragma once
+#include "deformableslam_export.h"
+
 #include <ORBmatcher.h>
 #include <Thirdparty/BBS/bbs_MAC.h>
 #include <vector>

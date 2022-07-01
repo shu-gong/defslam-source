@@ -21,6 +21,7 @@
 
 #ifndef DEFFRAMEDRAWER_H
 #define DEFFRAMEDRAWER_H
+#include "deformableslam_export.h"
 
 #include "FrameDrawer.h"
 

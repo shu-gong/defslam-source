@@ -21,6 +21,7 @@
 
 #ifndef SURFACEREGISTRATION_H
 #define SURFACEREGISTRATION_H
+#include "deformableslam_export.h"
 
 #include "KeyFrame.h"
 

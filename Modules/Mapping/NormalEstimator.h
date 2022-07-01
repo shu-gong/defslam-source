@@ -20,6 +20,7 @@
 */
 #ifndef NORMALESTIMATOR_H
 #define NORMALESTIMATOR_H
+#include "deformableslam_export.h"
 
 #include "PolySolver.h"
 #include "Surface.h"

@@ -20,6 +20,8 @@
 */
 #ifndef POLYSOLVER_H
 #define POLYSOLVER_H
+#include "deformableslam_export.h"
+
 #include <Eigen/Core>
 #include <ceres/ceres.h>
 #include <iostream>

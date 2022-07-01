@@ -21,6 +21,7 @@
 
 #ifndef SCHWARP_H
 #define SCHWARP_H
+#include "deformableslam_export.h"
 
 #include <Thirdparty/BBS/bbs.h>
 #include <Thirdparty/BBS/bbs_MAC.h>

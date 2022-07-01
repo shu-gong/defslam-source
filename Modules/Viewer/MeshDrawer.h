@@ -21,6 +21,7 @@
 
 #ifndef MESHDRAWER_H
 #define MESHDRAWER_H
+#include "deformableslam_export.h"
 
 #include <opencv2/core.hpp>
 

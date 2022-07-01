@@ -21,6 +21,7 @@
 
 #ifndef GTFRAME_H
 #define GTFRAME_H
+#include "deformableslam_export.h"
 
 #include "Frame.h"
 #include "Map.h"

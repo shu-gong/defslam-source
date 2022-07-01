@@ -21,6 +21,7 @@
 
 #ifndef GTKEYFRAME_H
 #define GTKEYFRAME_H
+#include "deformableslam_export.h"
 
 #include "DefKeyFrame.h"
 

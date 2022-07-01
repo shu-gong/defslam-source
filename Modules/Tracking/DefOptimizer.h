@@ -21,6 +21,7 @@
 
 #ifndef DEFOPTIMIZER_H
 #define DEFOPTIMIZER_H
+#include "deformableslam_export.h"
 
 #include "Frame.h"
 #include "KeyFrame.h"

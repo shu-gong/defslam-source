@@ -22,6 +22,7 @@
 
 #ifndef LAPLACIANMESH_H
 #define LAPLACIANMESH_H
+#include "deformableslam_export.h"
 
 #include "KeyFrame.h"
 #include "MapPoint.h"

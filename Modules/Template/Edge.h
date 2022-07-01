@@ -21,6 +21,7 @@
 
 #ifndef EDGE_H
 #define EDGE_H
+#include "deformableslam_export.h"
 
 #include <Template.h>
 #include <Node.h>

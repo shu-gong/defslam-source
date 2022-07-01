@@ -21,6 +21,7 @@
 
 #ifndef TEMPLATE_H
 #define TEMPLATE_H
+#include "deformableslam_export.h"
 
 #include "opencv2/core.hpp"
 #include <Edge.h>

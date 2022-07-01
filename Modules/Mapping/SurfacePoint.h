@@ -21,6 +21,7 @@
 
 #ifndef SURFACEPOINT_H
 #define SURFACEPOINT_H
+#include "deformableslam_export.h"
 
 #include <opencv2/core/core.hpp>
 

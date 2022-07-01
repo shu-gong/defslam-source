@@ -21,6 +21,7 @@
 
 #ifndef SHAPEFROMNORMALS_H
 #define SHAPEFROMNORMALS_H
+#include "deformableslam_export.h"
 
 #include "Eigen/Dense"
 #include "Eigen/Sparse"

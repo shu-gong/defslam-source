@@ -20,6 +20,7 @@
 */
 #ifndef DEFMAP_H
 #define DEFMAP_H
+#include "deformableslam_export.h"
 
 #include "Map.h"
 

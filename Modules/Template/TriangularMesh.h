@@ -21,6 +21,8 @@
 
 #ifndef TRIANGULARMESH_H
 #define TRIANGULARMESH_H
+#include "deformableslam_export.h"
+
 #include "opencv2/opencv.hpp"
 #include <Facet.h>
 #include <KeyFrame.h>

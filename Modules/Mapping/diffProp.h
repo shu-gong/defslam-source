@@ -22,6 +22,7 @@
 
 #ifndef DIFFPROP_H
 #define DIFFPROP_H
+#include "deformableslam_export.h"
 
 #include <vector>
 #include <list>

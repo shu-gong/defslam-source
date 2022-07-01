@@ -21,6 +21,7 @@
 
 #ifndef SURFACE_H
 #define SURFACE_H
+#include "deformableslam_export.h"
 
 #include "iostream"
 

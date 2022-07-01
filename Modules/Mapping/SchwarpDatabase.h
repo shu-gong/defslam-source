@@ -22,6 +22,7 @@
 #ifndef SCHWARPDATABASE_H
 #define SCHWARPDATABASE_H
 #pragma once
+#include "deformableslam_export.h"
 
 #include <list>
 #include <set>

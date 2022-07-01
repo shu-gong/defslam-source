@@ -21,6 +21,7 @@
 
 #ifndef FACET_H
 #define FACET_H
+#include "deformableslam_export.h"
 
 #include <Template.h>
 #include <KeyFrame.h>

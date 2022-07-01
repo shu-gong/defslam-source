@@ -20,6 +20,7 @@
 */
 #ifndef MINMEDIANFILTER_H
 #define MINMEDIANFILTER_H
+#include "deformableslam_export.h"
 
 #include <stdio.h>
 #include <iostream>

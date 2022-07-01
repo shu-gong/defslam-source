@@ -18,6 +18,7 @@
 * You should have received a copy of the GNU General Public License
 * along with DeformableSLAM. If not, see <http://www.gnu.org/licenses/>.
 */
+#include "deformableslam_export.h"
 #ifndef DEFKEYFRAME_H
 #define DEFKEYFRAME_H
 #include "MapPoint.h"

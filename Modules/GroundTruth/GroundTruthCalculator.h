@@ -21,6 +21,7 @@
 
 #ifndef GROUNDTRUTHCALCULATOR_H
 #define GROUNDTRUTHCALCULATOR_H
+#include "deformableslam_export.h"
 
 #include <iostream>
 #include <stdio.h>

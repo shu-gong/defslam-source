@@ -21,6 +21,7 @@
 
 #ifndef TEMPLATEGENERATOR_H
 #define TEMPLATEGENERATOR_H
+#include "deformableslam_export.h"
 
 #include "KeyFrame.h"
 #include "Map.h"

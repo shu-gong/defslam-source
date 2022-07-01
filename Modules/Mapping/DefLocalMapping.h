@@ -20,6 +20,7 @@
 */
 #ifndef DEFLOCALMAPPING_H
 #define DEFLOCALMAPPING_H
+#include "deformableslam_export.h"
 
 #include "KeyFrame.h"
 #include "LocalMapping.h"
