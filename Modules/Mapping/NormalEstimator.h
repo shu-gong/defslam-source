@@ -37,7 +37,7 @@ namespace DeformableSLAM
   class SurfacePoint;
   using ORB_SLAM2::KeyFrame;
 
-  class DeformableSLAM_EXPORT NormalEstimator
+  class DEFORMABLESLAM_EXPORT NormalEstimator
   {
   public:
     // Construtor by default deleted.

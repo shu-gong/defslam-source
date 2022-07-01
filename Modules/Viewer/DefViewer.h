@@ -46,7 +46,7 @@ namespace DeformableSLAM
     using ORB_SLAM2::System;
     using ORB_SLAM2::Tracking;
 
-    class DeformableSLAM_EXPORT DefViewer : public ORB_SLAM2::Viewer
+    class DEFORMABLESLAM_EXPORT DefViewer : public ORB_SLAM2::Viewer
     {
     public:
         // Constructor.

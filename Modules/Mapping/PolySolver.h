@@ -36,7 +36,7 @@ namespace DeformableSLAM
     Eigen::Matrix<double, 1, 10> eqs2;
   };
 
-  class DeformableSLAM_EXPORT PolySolver : public ceres::SizedCostFunction<2, 2>
+  class DEFORMABLESLAM_EXPORT PolySolver : public ceres::SizedCostFunction<2, 2>
   {
     /***********
     * This class is a block of ceres used to estimate the NRSfM.

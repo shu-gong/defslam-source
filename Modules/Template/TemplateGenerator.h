@@ -38,7 +38,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::KeyFrame;
   using ORB_SLAM2::MapPoint;
 
-  class DeformableSLAM_EXPORT TemplateGenerator
+  class DEFORMABLESLAM_EXPORT TemplateGenerator
   {
   public:
     //// Load a template given the nodes and facets.

@@ -45,7 +45,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::MapPoint;
 
-  class DeformableSLAM_EXPORT DefMapPoint : public MapPoint
+  class DEFORMABLESLAM_EXPORT DefMapPoint : public MapPoint
   {
   public:
     DefMapPoint() = delete;

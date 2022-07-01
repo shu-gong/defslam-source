@@ -39,7 +39,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::Tracking;
 
-  class DeformableSLAM_EXPORT DefFrameDrawer : public FrameDrawer
+  class DEFORMABLESLAM_EXPORT DefFrameDrawer : public FrameDrawer
   {
   public:
     // Constructor.

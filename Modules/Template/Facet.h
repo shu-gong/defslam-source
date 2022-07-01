@@ -52,7 +52,7 @@ namespace DeformableSLAM
   class Node;
   class Edge;
 
-  class DeformableSLAM_EXPORT Facet
+  class DEFORMABLESLAM_EXPORT Facet
   {
   public:
     // Constructor. It create a facet from three ptr to nodes for the

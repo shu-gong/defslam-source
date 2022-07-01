@@ -46,7 +46,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::MapPoint;
 
-  class DeformableSLAM_EXPORT LaplacianMesh : public TriangularMesh
+  class DEFORMABLESLAM_EXPORT LaplacianMesh : public TriangularMesh
   {
   public:
     // Constructor from mesh.

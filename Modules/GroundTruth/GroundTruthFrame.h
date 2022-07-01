@@ -41,7 +41,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::ORBextractor;
   using ORB_SLAM2::ORBVocabulary;
 
-  class DeformableSLAM_EXPORT GroundTruthFrame : public Frame
+  class DEFORMABLESLAM_EXPORT GroundTruthFrame : public Frame
   {
   public:
     GroundTruthFrame() = delete;

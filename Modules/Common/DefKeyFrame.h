@@ -18,9 +18,10 @@
 * You should have received a copy of the GNU General Public License
 * along with DeformableSLAM. If not, see <http://www.gnu.org/licenses/>.
 */
-#include "deformableslam_export.h"
+
 #ifndef DEFKEYFRAME_H
 #define DEFKEYFRAME_H
+#include "deformableslam_export.h"
 #include "MapPoint.h"
 
 #include "KeyFrame.h"
@@ -50,7 +51,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Map;
   using ORB_SLAM2::MapPoint;
 
-  class DeformableSLAM_EXPORT DefKeyFrame : public KeyFrame
+  class DEFORMABLESLAM_EXPORT DefKeyFrame : public KeyFrame
   {
   public:
     /**********************

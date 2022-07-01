@@ -47,7 +47,7 @@ namespace DeformableSLAM
   using ORB_SLAM2::Tracking;
 
   class DefKeyFrame;
-  class DeformableSLAM_EXPORT DefTracking : public Tracking
+  class DEFORMABLESLAM_EXPORT DefTracking : public Tracking
   {
 
   public:

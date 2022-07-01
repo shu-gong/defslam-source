@@ -36,7 +36,7 @@ namespace DeformableSLAM
   class Node;
   class Facet;
 
-  class DeformableSLAM_EXPORT Edge
+  class DEFORMABLESLAM_EXPORT Edge
   {
   public:
     // Constructor. Initialize an edge from two nodes, a facet
