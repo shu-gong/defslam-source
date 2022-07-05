@@ -52,7 +52,6 @@ namespace DeformableSLAM
     mbFinished = false;
     mbStopped = false;
 
-    cv::namedWindow("DeformableSLAM: Current Frame");
 
     bool bFollow = true;
     bool bLocalizationMode = false;
@@ -63,18 +62,6 @@ namespace DeformableSLAM
       // sleep(1);
 
       cv::Mat im = mpFrameDrawer->DrawFrame();
-      if (!im.empty())
-      { //{&&!mpTracker->mCurrentFrame.ImOut.empty()){
-        if (mbSaveResults)
-        {
-//          std::ostringstream out;
-//          out << std::internal << std::setfill('0') << std::setw(5)
-//              << uint(timestamp);
-//          cv::imwrite("2D" + out.str() + ".png", im);
-        }
-        cv::imshow("DeformableSLAM: Current Frame", im);
-        cv::waitKey(10);
-      }
 
     }
     // MeshDrawer::Exit();
