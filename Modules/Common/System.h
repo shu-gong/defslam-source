@@ -137,6 +137,12 @@ namespace DeformableSLAM
     // You can call this right after TrackMonocular (or stereo or RGBD)
     int GetTrackingState();
 
+  // The viewer draws the map and the current camera pose. It uses Pangolin.
+  Viewer *mpViewer;
+
+  FrameDrawer *mpFrameDrawer;
+  MapDrawer *mpMapDrawer;
+
   protected:
     // Input sensor
     eSensor mSensor;
@@ -171,11 +177,6 @@ namespace DeformableSLAM
     // afterwards.
     LoopClosing *mpLoopCloser;
 
-    // The viewer draws the map and the current camera pose. It uses Pangolin.
-    Viewer *mpViewer;
-
-    FrameDrawer *mpFrameDrawer;
-    MapDrawer *mpMapDrawer;
 
     // System threads: Local Mapping, Loop Closing, Viewer.
     // The Tracking thread "lives" in the main execution thread that creates the
